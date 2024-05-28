@@ -40,10 +40,7 @@ resource "aws_security_group" "web_sg-us-east-1" {
     tags = {
       Name = "web_sg-us-east-1"
     }
-
-  
 }
-
 resource "aws_security_group" "web_sg-us-west-1" {
     name = "web_sg-us-west-1"
     description = "sec group for us-west-1"
@@ -56,9 +53,6 @@ resource "aws_security_group" "web_sg-us-west-1" {
 
   
 }
-
-
-
 resource "aws_security_group_rule" "allow_http_ssh_icmp_us-east-1" {
     for_each = local.security_groups_protocol
     provider = aws.us-east-1
@@ -70,7 +64,6 @@ resource "aws_security_group_rule" "allow_http_ssh_icmp_us-east-1" {
     security_group_id = aws_security_group.web_sg-us-east-1.id
   
 }
-
 resource "aws_security_group_rule" "allow_all-us-east-1" {
     provider = aws.us-east-1
     type = "egress"
@@ -81,7 +74,6 @@ resource "aws_security_group_rule" "allow_all-us-east-1" {
     security_group_id = aws_security_group.web_sg-us-east-1.id
   
 }
-
 resource "aws_security_group_rule" "allow_http_ssh_icmp_us-west-1" {
     for_each = {
     for protocol, type in local.security_groups_protocol : protocol => type
@@ -96,7 +88,6 @@ resource "aws_security_group_rule" "allow_http_ssh_icmp_us-west-1" {
     security_group_id = aws_security_group.web_sg-us-west-1.id
   
 }
-
 resource "aws_security_group_rule" "allow_all-us-west-1" {
     provider = aws.us-west-1
     type = "egress"
