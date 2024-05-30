@@ -1,3 +1,13 @@
+/*
+this is just an example 
+use 
+terraform output instance_public_ip-us-east-1 >> instance_public_ip-json.out
+
+terraform output instance_public_ip-us-west-1 >>  instance_public_ip-json.out
+
+
+*/
+
 [
   {
     "name" = "web-app-us-east-0"
