@@ -1,7 +1,3 @@
-
-
-
-
 resource "aws_instance" "web-app-us-east-1" {
     count = 2
     provider = aws.us-east-1
