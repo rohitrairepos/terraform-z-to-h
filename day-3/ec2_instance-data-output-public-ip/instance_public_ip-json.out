@@ -1,0 +1,20 @@
+[
+  {
+    "name" = "web-app-us-east-0"
+    "public_ip" = "54.242.120.118"
+  },
+  {
+    "name" = "web-app-us-east-1"
+    "public_ip" = "34.229.220.24"
+  },
+]
+[
+  {
+    "name" = "web-app-us-west-0"
+    "public_ip" = "54.67.104.4"
+  },
+  {
+    "name" = "web-app-us-west-1"
+    "public_ip" = "50.18.134.65"
+  },
+]
