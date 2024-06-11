@@ -1,21 +1,21 @@
-data aws_ami "ubuntu_image_id" {
+data "aws_ami" "ubuntu_image_id" {
 
   most_recent = true
   filter {
-    name = "name"
+    name   = "name"
     values = ["amzn2-ami-kernel-5.10-hvm-2.0.20240529.0-*"]
   }
-  
+
 }
 
 
 
 data "aws_security_group" "name" {
   filter {
-    name = "group-name"
+    name   = "group-name"
     values = ["default"]
   }
-  
+
 }
 
 
