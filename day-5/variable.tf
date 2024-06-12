@@ -3,15 +3,6 @@ variable "vpc_cidr_block" {
   default = "10.0.0.0/16"
 }
 
-
-variable "vpc_cidr" {
-  description = "The CIDR block for the VPC"
-  type        = string
-  default     = "10.0.0.0/16"
-}
-
-
-
 variable "subnets" {
   description = "A list of maps defining subnets"
   type = list(object({
@@ -45,4 +36,3 @@ variable "vpc_tag" {
   type        = string
   default     = "new_vpc"
 }
-
