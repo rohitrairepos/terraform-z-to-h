@@ -1,6 +1,7 @@
-Project 1: VPC and Networking
-Problem Statement:
-Create a Virtual Private Cloud (VPC) with public and private subnets across multiple availability zones. Deploy a NAT Gateway in the public subnet to allow instances in the private subnet to access the internet. Ensure secure communication and proper routing between subnets.
+**Project 1: VPC and Networking**
+
+      Problem Statement:
+      Create a Virtual Private Cloud (VPC) with public and private subnets across multiple availability zones. Deploy a NAT Gateway in the public subnet to allow instances in the private subnet to access the internet. Ensure secure communication and proper routing between subnets.
 
 Project 2: EC2 Instances and Autoscaling
 Problem Statement:
