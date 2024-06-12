@@ -3,6 +3,7 @@ resource "aws_subnet" "dev-vpc-subnet" {
   vpc_id            = aws_vpc.dev-vpc.id
   cidr_block        = each.value.cidr
   availability_zone = each.value.az
+  map_public_ip_on_launch = substr(each.value.az, -1, 1) == "a" ? true : false
 
   tags = {
     Name = each.value.name
