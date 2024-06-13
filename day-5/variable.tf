@@ -30,9 +30,15 @@ variable "subnets" {
 }
 
 
-
 variable "vpc_tag" {
   description = "tag for vpc"
   type        = string
   default     = "new_vpc"
+}
+
+
+variable "intance_type" {
+  type    = string
+  default = "t2.micro"
+
 }

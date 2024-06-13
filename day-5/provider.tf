@@ -8,12 +8,12 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-2"
 }
 
 terraform {
   backend "s3" {
-    bucket         = "terraform.freetier08"
+    bucket         = "terraform.freetier09"
     key            = "terraform-folders/terraform-vpc.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraform-locks"

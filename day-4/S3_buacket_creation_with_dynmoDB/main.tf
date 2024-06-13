@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "example" {
-  bucket = "terraform.freetier08"
+  bucket = "terraform.freetier09"
 
   tags = {
     Name        = "terraform-backend"
