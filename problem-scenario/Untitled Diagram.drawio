@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-14T06:32:26.932Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="wjlwl5O50OCENBdy6KAR" version="24.5.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-14T06:39:56.882Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="HtlzhIWgxgzl-rQCnq-_" version="24.5.4" type="github">
   <diagram name="Page-1" id="W_L0l0Qbgr8lA044iFBq">
     <mxGraphModel dx="1434" dy="795" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -114,6 +114,9 @@
         </mxCell>
         <mxCell id="q2kgf8KVJCSMXckiUgjD-46" value="EC2-B can reach internet but user can&#39;t reach , ssh EC2-B" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="288" y="346" width="162" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="q2kgf8KVJCSMXckiUgjD-47" value="EC2-C can&#39;t reach internet as well user can&#39;t rach internet" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="268" y="554" width="172" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
