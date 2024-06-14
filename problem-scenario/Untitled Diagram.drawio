@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-14T06:39:56.882Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="HtlzhIWgxgzl-rQCnq-_" version="24.5.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-14T06:54:45.399Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="CMI_EdTb5FTlrY8E1Udx" version="24.5.4" type="github">
   <diagram name="Page-1" id="W_L0l0Qbgr8lA044iFBq">
     <mxGraphModel dx="1434" dy="795" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -109,6 +109,16 @@
         <mxCell id="q2kgf8KVJCSMXckiUgjD-43" value="IGW" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="218.5" y="364.5" width="60" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="q2kgf8KVJCSMXckiUgjD-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="q2kgf8KVJCSMXckiUgjD-44" target="q2kgf8KVJCSMXckiUgjD-43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="212" y="386" />
+              <mxPoint x="212" y="365" />
+              <mxPoint x="226" y="365" />
+              <mxPoint x="226" y="372" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="q2kgf8KVJCSMXckiUgjD-44" value="Internet" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#F7F7F7;" vertex="1" parent="1">
           <mxGeometry x="62" y="366.61" width="53" height="38" as="geometry" />
         </mxCell>
@@ -117,6 +127,16 @@
         </mxCell>
         <mxCell id="q2kgf8KVJCSMXckiUgjD-47" value="EC2-C can&#39;t reach internet as well user can&#39;t rach internet" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="268" y="554" width="172" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q2kgf8KVJCSMXckiUgjD-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="q2kgf8KVJCSMXckiUgjD-3" target="q2kgf8KVJCSMXckiUgjD-44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="79" y="437" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q2kgf8KVJCSMXckiUgjD-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="q2kgf8KVJCSMXckiUgjD-1" target="q2kgf8KVJCSMXckiUgjD-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
