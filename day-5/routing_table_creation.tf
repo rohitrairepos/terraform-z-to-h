@@ -40,9 +40,6 @@ resource "aws_route" "add_route_in_az1" {
 
 
 
-locals {
-  subnets_in_az2 = { for key, subnet in aws_subnet.dev-vpc-subnet : key => subnet if substr(subnet.availability_zone, -1, 1) == "b" }
-}
 
 
 /*
@@ -65,6 +62,10 @@ output is :
 aws_internet_gateway = [ "nat-0513acf163459d9ff"]
 */
 
+
+locals {
+  subnets_in_az2 = { for key, subnet in aws_subnet.dev-vpc-subnet : key => subnet if substr(subnet.availability_zone, -1, 1) == "b" }
+}
 
 
 locals {
