@@ -51,14 +51,18 @@ output is :
 aws_internet_gateway = {
   "dev-vpc-us-east-1a" = "nat-0513acf163459d9ff"
 }
+now to access "nat-0513acf163459d9ff" we can use below local but by this way we need to explicitly mention "dev-vpc-us-east-2a" 
+to avoid this we can use value function which takes a map and returns a list containing the values of the elements in that map
 
+
+output "nat_gateway_id" {
+  value = local.aws_nat_gateway["dev-vpc-us-east-2a"]
+}
 
 nat_gw_id_list = values(local.nat_gw_id) 
 output is :
 
-aws_internet_gateway = [
-      - "nat-0513acf163459d9ff",
-    ]
+aws_internet_gateway = [ "nat-0513acf163459d9ff"]
 */
 
 
