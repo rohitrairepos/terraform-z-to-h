@@ -24,6 +24,8 @@ locals {
 ## add internet gateway route to az1 only 
 resource "aws_route" "add_route_in_az1" {
   for_each               = local.subnets_in_az1
+  #for_each = {for key, subnet in aws_subnet.dev-vpc-subnet : key => subnet if substr(subnet.availability_zone, -1, 1) == "a"}
+  # if define above #for_each then no need to define locals 
   route_table_id         = aws_route_table.custom_route_table[each.key].id
   destination_cidr_block = "0.0.0.0/0"
   gateway_id             = aws_internet_gateway.vpc_dev_igw.id
