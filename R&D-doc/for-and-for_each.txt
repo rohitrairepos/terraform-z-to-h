@@ -1,0 +1,61 @@
+output "subnets" {
+    value = {for subnet in var.subnets : subnet.name => subnet}
+  
+}
+
+/*
+Changes to Outputs:
+  + subnets = {
+      + Private-App-Subnet-AZ-1 = {
+          + az   = "us-east-1a"
+          + cidr = "10.0.2.0/24"
+          + name = "Private-App-Subnet-AZ-1"
+        }
+      + Private-App-Subnet-AZ-2 = {
+          + az   = "us-east-1b"
+          + cidr = "10.0.5.0/24"
+          + name = "Private-App-Subnet-AZ-2"
+        }
+      + Private-DB-Subnet-AZ-1  = {
+          + az   = "us-east-1a"
+          + cidr = "10.0.3.0/24"
+          + name = "Private-DB-Subnet-AZ-1"
+        }
+      + Private-DB-Subnet-AZ-2  = {
+          + az   = "us-east-1b"
+          + cidr = "10.0.6.0/24"
+          + name = "Private-DB-Subnet-AZ-2"
+        }
+      + Public-Web-Subnet-AZ-1  = {
+          + az   = "us-east-1a"
+          + cidr = "10.0.1.0/24"
+          + name = "Public-Web-Subnet-AZ-1"
+        }
+      + Public-Web-Subnet-AZ-2  = {
+          + az   = "us-east-1b"
+          + cidr = "10.0.4.0/24"
+          + name = "Public-Web-Subnet-AZ-2"
+        }
+    }
+    */
+
+output "subnet1" {
+
+    value = {for subnet in var.subnets : subnet.name => subnet.name}
+  
+  
+}
+
+/*
+
+Changes to Outputs:
+  + subnet1 = {
+      + Private-App-Subnet-AZ-1 = "Private-App-Subnet-AZ-1"
+      + Private-App-Subnet-AZ-2 = "Private-App-Subnet-AZ-2"
+      + Private-DB-Subnet-AZ-1  = "Private-DB-Subnet-AZ-1"
+      + Private-DB-Subnet-AZ-2  = "Private-DB-Subnet-AZ-2"
+      + Public-Web-Subnet-AZ-1  = "Public-Web-Subnet-AZ-1"
+      + Public-Web-Subnet-AZ-2  = "Public-Web-Subnet-AZ-2"
+    }
+*/
+
